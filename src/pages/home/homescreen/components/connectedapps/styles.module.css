@@ -1,0 +1,20 @@
+.mainCard{
+  padding: 25px;
+}
+.customImage{
+  width: 40px; 
+  height: 40px;
+}
+.customPara{
+  font-size: 1rem;
+}
+.customLink{
+  text-decoration: none;
+  color: rgb(59, 193, 197);
+}
+@media only screen and (max-width: 576px) {
+  .mainContainer {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}

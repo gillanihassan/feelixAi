@@ -1,0 +1,10 @@
+.mainContainer{
+  padding-left: 75px;
+  padding-right: 30px;
+}
+@media only screen and (max-width: 576px) {
+  .mainContainer{
+   padding-left: 50px;
+   padding-right: 13px;
+  }
+}

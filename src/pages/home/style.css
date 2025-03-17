@@ -1,0 +1,6 @@
+.my-check input{
+  left: 10px; 
+                            padding: 13px !important; 
+                            border: 1.5px solid black;
+                            border-radius: 7px;
+}

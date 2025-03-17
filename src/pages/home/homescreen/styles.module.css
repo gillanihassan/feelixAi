@@ -1,0 +1,10 @@
+.mainContainer{
+  padding-left: 75px;
+  padding-right: 30px;
+}
+@media  (max-width: 576px) {
+  .mainContainer{
+    padding-left: 0px;
+  padding-right: 0px;
+  }
+}

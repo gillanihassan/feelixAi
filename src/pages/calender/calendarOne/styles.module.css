@@ -1,0 +1,22 @@
+.largeCalendar {
+  width: 100%;
+  max-width: 1000px; /* Adjust width */
+  height: 400px; /* Increase height */
+  font-size: 1.2rem;
+  border: none;
+}
+.availableSlotButton {
+  background-color: #3BC1C5 !important; /* Green */
+  color: white !important;
+  border: none !important;
+}
+.calendarContainer{
+  padding-left: 100px;
+  padding-right: 70px;
+}
+@media (max-width: 576px) {
+  .calendarContainer {
+    padding-left: 70px !important;
+    padding-right: 20px !important;
+  }
+}

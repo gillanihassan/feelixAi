@@ -1,0 +1,27 @@
+.customButton{
+  background-color:rgb(59, 193, 197);
+  border: none;
+}
+.customButton:hover{
+  background-color:rgb(59, 193, 197);
+  border: none;
+}
+.mainDiv{
+  border: 1px solid grey;
+  padding: 10px;
+  border-radius: 10px;
+}
+@media only screen and (max-width: 576px) {
+  .mainContainer {
+    padding-left: 3rem;
+    padding-right: 1rem;
+  }
+}
+@media only screen and (max-width: 437px) {
+  .customButton {
+    padding: 1px;
+  }
+  .customHeading {
+    font-size: small;
+  }
+}

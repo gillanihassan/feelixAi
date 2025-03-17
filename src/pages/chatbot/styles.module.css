@@ -1,0 +1,56 @@
+.mainContainer{
+  padding-left: 80px;
+  padding-right: 30px;
+}
+.columnFirst{
+  height: calc(100vh - 56px);
+}
+.fileButton{
+  background-color: #3BC1C5;
+  border: none;
+}
+.chatbotImage{
+  width: 85px;
+  height: 85px;
+}
+.inputButton{
+  padding-left: 24px;
+  padding-right: 24px;
+  border-radius: 5px;
+  background-color: #3BC1C5;
+  border: none;
+}
+.customSwitch .form-check-input:checked {
+  background-color: #28a745 !important; 
+  border-color: #28a745 !important;
+}
+.customSwitch .form-check-input {
+  background-color: #ccc !important; 
+  border-color: #ccc !important;
+}
+.customFeelixHeading{
+  margin-bottom: 16px;
+ }
+@media (max-width: 768px) {
+  .columnFirst{
+    height: calc(60vh - 56px);
+  }
+  .customFeelixHeading{
+   margin-bottom: 10px;
+  }
+  .chatbotImage{
+    width: 60px;
+    height: 60px;
+  }
+}
+@media (max-width: 768px) {
+  .chatbotImage{
+    width: 40px;
+    height: 40px;
+    margin-top: 30px;
+  }
+  .mainContainer{
+    padding-left: 50px;
+    padding-right: 10px;
+  }
+}

@@ -1,0 +1,68 @@
+.bg{
+  background: #220C36;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.heading{
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 38px;
+  letter-spacing: 0%;
+}
+
+.paragraph{
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0%;
+}
+
+.loginForm{
+  padding: 30px 30px;
+  min-height: 50vh;
+}
+
+.groupImage {
+  width: 280px;
+  height: auto;
+}
+
+@media screen and (min-width: 568px) {
+  .groupImage {
+    width: 380px;
+    height: auto;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .groupImage {
+    width: 380px;
+    height: auto;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .groupImage {
+    width: 380px;
+    height: auto;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .groupImage {
+    width: 380px;
+    height: auto;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .groupImage {
+    width: 665px;
+    height: auto;
+  }
+}

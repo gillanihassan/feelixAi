@@ -1,0 +1,22 @@
+.purpleBg{
+  background: #220C36;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mainBg{
+  background-color: #3BC1C5;
+  min-height: 100vh;
+  padding: 4rem;
+}
+
+.leftPanel{
+  min-height: calc(100vh - 8rem);
+  background-color: white;
+}
+
+.rightImage{
+  min-height: calc(100vh - 8rem);
+}

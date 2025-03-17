@@ -1,0 +1,32 @@
+.mainCard{
+ background-color: #6001D3;
+ color: #fff;
+ border-radius: 10px;
+}
+.customImage{
+  max-width: 120px;
+}
+@media (max-width: 992px) {
+  .customButton {
+    pad: 0px;
+    font-size: small;
+  }
+}
+@media (max-width: 768px) {
+  .customButton {
+   padding: 5px;
+   font-size: large;
+  }
+  .mainContainer{
+    text-align: center;
+    padding-left: 45px;
+  }
+  .customImage{
+    max-width: 120px;
+    display: block;
+    margin: 0 auto;
+  }
+  .mainCard{
+    height: 480px;
+  }
+}

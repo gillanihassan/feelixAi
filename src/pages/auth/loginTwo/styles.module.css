@@ -1,0 +1,17 @@
+.colLeft{
+  background-color: white;
+  height: 100vh;
+}
+.textColor{
+  color: rgb(59, 193, 197);
+}
+.buttonBgColor{
+  background-color: rgb(59, 193, 197);
+  border: none !important;
+  
+}
+.buttonBgColor:hover {
+  background-color: rgb(45, 150, 155) !important; /* Custom hover effect */
+  border: none !important;
+  
+}

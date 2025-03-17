@@ -1,0 +1,27 @@
+.sidebar{
+  position: fixed;
+  top: 0px;
+  left: 0px;
+}
+
+
+
+.sidebar ul {
+  padding-right:5px ;
+  padding-left:5px ;
+}
+
+.sidebar ul li {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 35px;
+  height: 35px;
+  padding: 10px;
+  border-radius: 10px;
+  margin-top: 10px;
+}
+
+.sidebar ul li:hover {
+  background-color: aquamarine;
+}
