@@ -1,6 +1,6 @@
 import { Container, Row, Col, Card, Table } from "react-bootstrap";
 import { Pie, Line, Bar } from "react-chartjs-2";
-import style from "./styles.module.css";
+import style from "./Styles.module.css";
 import {
   Chart as ChartJS,
   CategoryScale,
