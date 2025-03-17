@@ -8,6 +8,7 @@ import {
   Button,
   InputGroup,
 } from "react-bootstrap";
+
 import { Line, Bar } from "react-chartjs-2";
 import style from "./styles.module.css";
 import {

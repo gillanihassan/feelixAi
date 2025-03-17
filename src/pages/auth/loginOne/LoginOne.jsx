@@ -3,8 +3,15 @@ import Logo from "../../../assets/images/logo/logo.jpg";
 import groupImage from "../../../assets/images/heroimage/Group.png";
 
 import styles from "./styles.module.css";
-
+import { useNavigate } from "react-router-dom";
 function LoginOne() {
+  const navigate = useNavigate();
+  const handleSubmit = (event) => {
+    event.preventDefault();
+
+    navigate("/dashboard");
+  };
+
   return (
     <Container fluid>
       <Row>
@@ -28,7 +35,7 @@ function LoginOne() {
               Welcome back! Please enter your details.
             </p>
 
-            <Form>
+            <Form onSubmit={handleSubmit}>
               <Form.Group className="mb-3" controlId="formBasicEmail">
                 <Form.Label className="text-white">Email</Form.Label>
                 <Form.Control type="email" placeholder="Enter your email" />
@@ -43,7 +50,7 @@ function LoginOne() {
                 <a href="#">Forgot Password</a>
               </div>
 
-              <Button variant="primary" className="w-100">
+              <Button variant="primary" type="submit" className="w-100">
                 SignIn
               </Button>
               <p className="mt-5 text-white">
