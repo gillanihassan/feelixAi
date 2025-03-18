@@ -32,6 +32,15 @@
   height: auto;
 }
 
+.customButton{
+  background-color: #3BC1C5 !important;
+  border: none;
+}
+
+.customAnchor{
+  color:  #3BC1C5 !important;
+}
+
 @media screen and (min-width: 568px) {
   .groupImage {
     width: 380px;

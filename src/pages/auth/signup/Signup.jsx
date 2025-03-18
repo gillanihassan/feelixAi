@@ -113,7 +113,7 @@ const Signup = () => {
                       />
                     </Form.Group>
 
-                    <Button className="w-100 mt-2" style={{ height: "34px" }}>
+                    <Button className={` ${styles.customButton} w-100 mt-2`}>
                       Sign up
                     </Button>
                   </Form>
@@ -125,7 +125,13 @@ const Signup = () => {
                     className="mt-2 mb-0 text-black"
                     style={{ fontSize: "0.85rem" }}
                   >
-                    Already have an account? <NavLink to="/">Signin</NavLink>
+                    Already have an account?{" "}
+                    <NavLink
+                      to="/"
+                      className={`${styles.customLink} text-decoration-none`}
+                    >
+                      Signin
+                    </NavLink>
                   </p>
                 </div>
               </div>

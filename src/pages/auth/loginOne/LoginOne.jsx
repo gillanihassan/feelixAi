@@ -46,15 +46,27 @@ function LoginOne() {
                 <Form.Control type="password" placeholder="********" />
               </Form.Group>
 
-              <div className="text-end">
-                <a href="#">Forgot Password</a>
+              <div className="text-end mb-4">
+                <a
+                  href="#"
+                  className={` ${styles.customAnchor} text-decoration-none`}
+                >
+                  Forgot Password
+                </a>
               </div>
 
-              <Button variant="primary" type="submit" className="w-100">
+              <Button
+                variant="primary"
+                type="submit"
+                className={`${styles.customButton} w-100`}
+              >
                 SignIn
               </Button>
               <p className="mt-5 text-white">
-                Don’t have an account? <NavLink to="/signup">SignUp</NavLink>
+                Don’t have an account?{" "}
+                <NavLink to="/signup" className={`${styles.customAnchor}`}>
+                  SignUp
+                </NavLink>
               </p>
             </Form>
           </div>

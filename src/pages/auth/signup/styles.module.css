@@ -20,3 +20,14 @@
 .rightImage{
   min-height: calc(100vh - 8rem);
 }
+.customButton{
+  background-color:#3BC1C5;
+  border: none;
+}
+.customButton:hover {
+  background-color:#3BC1C5;
+  border: none;
+}
+.customLink{
+  color:#3BC1C5;
+}

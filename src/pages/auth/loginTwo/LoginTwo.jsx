@@ -43,7 +43,9 @@ const LoginTwo = () => {
             </div>
             <p className="text-black mt-3">
               Don’t have an account?
-              <Link to="/signup">Login again</Link>
+              <Link to="/signup" className={`${styles.textColor}`}>
+                Login
+              </Link>
             </p>
           </div>
         </Col>
