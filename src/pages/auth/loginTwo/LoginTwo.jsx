@@ -2,6 +2,7 @@ import { Button, Col, Container, Form, Image, Row } from "react-bootstrap";
 import Logo from "../../../assets/signup/logo.png";
 // import outerCircle2 from "../../../assets/signup/outerCircle2.png";
 import styles from "../loginTwo//styles.module.css";
+import { Link } from "react-router";
 
 const LoginTwo = () => {
   return (
@@ -41,10 +42,8 @@ const LoginTwo = () => {
               </Form>
             </div>
             <p className="text-black mt-3">
-              Don’t have an account?{" "}
-              <a href="#" style={{ color: "rgb(59, 193, 197)" }}>
-                SignUp
-              </a>
+              Don’t have an account?
+              <Link to="/signup">Login again</Link>
             </p>
           </div>
         </Col>

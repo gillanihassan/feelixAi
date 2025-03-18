@@ -12,6 +12,7 @@ import outerCircle1 from "../../../assets/signup/outerCircle1.png";
 // import outerCircle2 from "../../../assets/signup/outerCircle2.png";
 
 import styles from "./styles.module.css";
+import { NavLink } from "react-router-dom";
 
 const Signup = () => {
   return (
@@ -124,7 +125,7 @@ const Signup = () => {
                     className="mt-2 mb-0 text-black"
                     style={{ fontSize: "0.85rem" }}
                   >
-                    Already have an account? <a href="#">Sign In</a>
+                    Already have an account? <NavLink to="/">Signin</NavLink>
                   </p>
                 </div>
               </div>

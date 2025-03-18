@@ -3,7 +3,7 @@ import Logo from "../../../assets/images/logo/logo.jpg";
 import groupImage from "../../../assets/images/heroimage/Group.png";
 
 import styles from "./styles.module.css";
-import { useNavigate } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
 function LoginOne() {
   const navigate = useNavigate();
   const handleSubmit = (event) => {
@@ -54,7 +54,7 @@ function LoginOne() {
                 SignIn
               </Button>
               <p className="mt-5 text-white">
-                Don’t have an account? <a href="">SignUp</a>
+                Don’t have an account? <NavLink to="/signup">SignUp</NavLink>
               </p>
             </Form>
           </div>
