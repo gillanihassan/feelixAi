@@ -9,9 +9,6 @@ import Dashboard from "../assets/images/sidebar/Dashboard.png";
 import Settings from "../assets/images/sidebar/Settings.png";
 import Chatbot from "../assets/images/sidebar/Chatbot.png";
 import Vector from "../assets/images/sidebar/Vector.png";
-import expand from "../assets/images/sidebar/expand.png";
-import questionMark from "../assets/images/sidebar/questionMark.png";
-import Switch from "../assets/images/sidebar/Switch.png";
 import { Image } from "react-bootstrap";
 import style from "./style.module.css";
 import { Link } from "react-router-dom";
@@ -61,13 +58,13 @@ function Header({ children }) {
         >
           <ul>
             <li>
-              <Link to={"#"}>
+              <Link to={"/homescreen"}>
                 <Image src={HomeLogo} />
               </Link>
             </li>
 
             <li>
-              <Link to={"#"}>
+              <Link to={"/dashboard"}>
                 <Image src={Dashboard} />
               </Link>
             </li>
@@ -79,21 +76,15 @@ function Header({ children }) {
             </li>
 
             <li>
-              <Link to={"#"}>
+              <Link to={"/chatbot"}>
                 <Image src={Chatbot} />
               </Link>
             </li>
           </ul>
           <ul>
             <li>
-              <Link to={"#"}>
-                <Image src={Chatbot} />
-              </Link>
-            </li>
-
-            <li>
-              <Link to={"#"}>
-                <Image src={Chatbot} />
+              <Link to={"/calendar-schedule"}>
+                <Image src={Vector} />
               </Link>
             </li>
           </ul>
