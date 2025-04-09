@@ -16,11 +16,11 @@ const ChatbotUI = () => {
     "User Request: Summary",
     "Efficient Worker Naming",
     "User Assistant: Summary",
-    "Staff AI Task Matching",
+    "Staff Ai Task Matching",
     "AR Technology Explained",
     "Solar Energy",
     "Staff Ai Task Matching",
-    " AR Technology Explained",
+    "AR Technology Explained",
   ];
 
   return (
@@ -42,7 +42,7 @@ const ChatbotUI = () => {
             <Col lg={12}>
               <InputGroup className="mb-3">
                 <InputGroup.Text>
-                  <i className="bi bi-search "></i>
+                  <i className="bi bi-search"></i>
                 </InputGroup.Text>
                 <Form.Control type="text" placeholder="Search" />
               </InputGroup>
@@ -72,7 +72,7 @@ const ChatbotUI = () => {
                 Welcome to the
                 <span style={{ color: "#3BC1C5" }}>Chatbot!</span>
               </h4>
-              <p>Hi there! I am your AI assistant. How can I help you today?</p>
+              <p>Hi there! I am your AI assistant. How can i help you today?</p>
             </div>
           </div>
           <div className="mb-2 ">
@@ -81,7 +81,7 @@ const ChatbotUI = () => {
                 <InputGroup>
                   <Form.Control
                     type="text"
-                    placeholder="What's the current status of my project?"
+                    placeholder="What's the Current status of my Project?"
                   />
                 </InputGroup>
               </Col>

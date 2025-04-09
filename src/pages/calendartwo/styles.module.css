@@ -30,7 +30,7 @@
 }
 
 :global(.react-calendar__tile--now ){
-  background: none;
+  border: none;
 }
 
 :global(.react-calendar__tile:enabled:hover){
@@ -44,5 +44,5 @@
 :global(.react-calendar__tile--now) abbr{
 background-color:#3bc1c5;
 padding: 11px;
-border-radius: 100px ;
+border-radius: 100px;
 } 

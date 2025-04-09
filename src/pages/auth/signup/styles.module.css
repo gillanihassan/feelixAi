@@ -5,24 +5,30 @@
   justify-content: center;
   align-items: center;
 }
-
 .mainBg{
   background-color: #3BC1C5;
   min-height: 100vh;
   padding: 4rem;
 }
-
 .leftPanel{
   min-height: calc(100vh - 8rem);
   background-color: white;
+  border-radius: 10px;
 }
 
 .rightImage{
   min-height: calc(100vh - 8rem);
+  border-radius: 10px;
 }
 .customButton{
   background-color:#3BC1C5;
   border: none;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 18px;
+  padding-right: 18px;
+  font-size: 16px;
+  font-weight: 600px;
 }
 .customButton:hover {
   background-color:#3BC1C5;
@@ -30,4 +36,47 @@
 }
 .customLink{
   color:#3BC1C5;
+  margin-left: 8px;
+}
+.contentContainer{
+  padding-left: 48px;
+  padding-right: 48px;
+}
+.outerCircleOne{
+  height: 90px;
+  position: absolute;
+  top: 0;
+  right: 20%;
+}
+.logoRes{
+  display: none;
+}
+
+
+@media (max-width: 576px) {
+  .mainBg{
+    /* background-color: #3BC1C5; */
+    min-height: 100vh;
+    padding: 1.5rem;
+    background-image: url('../../../assets/responsive/background.png'); 
+  }
+  .contentContainer{
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  .leftPanel{
+    min-height: calc(100vh - 3rem);
+    background-color: white;
+    border-radius: 20px;
+  }
+  .outerCircleOne {
+    display: none; /* Hide the image */
+  }
+  .logoRes{
+    display: block;
+    margin: 0 auto;
+    height: 58px;
+    width: 111px;
+    margin-bottom: 10px;
+  }
 }

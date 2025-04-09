@@ -1,13 +1,12 @@
 import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
 import LoginOne from "../pages/auth/loginOne/LoginOne";
+import NewLoginOne from "../pages/auth/newLoginOne/NewLoginOne";
 import Signup from "../pages/auth/signup/Signup";
 import LoginTwo from "../pages/auth/loginTwo/LoginTwo";
 import Home from "../pages/home/Home";
 import HomeTwo from "../pages/home/homeTwo/HomeTwo";
 import Chatbot from "../pages/chatbot/Chat";
-
 import Header from "../layouts/navbar";
-// import LoginThree from "../pages/auth/loginThree/LoginThree";
 import HomeScreen from "../pages/home/homescreen/HomeScreen";
 import Dashboard from "../pages/dashboard/Dashboard";
 import DashboardOne from "../pages/dashboardone/DashboardOne";
@@ -15,12 +14,14 @@ import Calendar from "../pages/calender/Calendar";
 import CalendarSchedule from "../pages/calendartwo/CalendarSchedule";
 import ChatbotTwo from "../pages/chatbotTwo/ChatbotTwo";
 import ChatbotThree from "../pages/chatbotThree/ChatbotThree";
+import AppointmentRequests from "../pages/appointment/AppointmentRequests ";
 
 const Routing = () => {
   return (
     <Router>
       <Routes>
-        <Route path="/" element={<LoginOne />} />
+        <Route path="/old" element={<LoginOne />} />
+        <Route path="/" element={<NewLoginOne />} />
         <Route path="/home" element={<Home />} />
         <Route path="/logintwo" element={<LoginTwo />} />
         <Route path="hometwo" element={<HomeTwo />} />
@@ -103,6 +104,16 @@ const Routing = () => {
             <div>
               <Header>
                 <CalendarSchedule />
+              </Header>
+            </div>
+          }
+        />
+        <Route
+          path="/appointment-requests"
+          element={
+            <div>
+              <Header>
+                <AppointmentRequests />
               </Header>
             </div>
           }

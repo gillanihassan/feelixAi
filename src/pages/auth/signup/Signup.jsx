@@ -1,5 +1,6 @@
 import { Button, Col, Container, Form, Image, Row } from "react-bootstrap";
 import Logo from "../../../assets/signup/logo.png";
+import LogoRes from "../../../assets/images/logo/logo.jpg";
 import dot1 from "../../../assets/signup/dot1.png";
 import dot2 from "../../../assets/signup/dot2.png";
 // import dot3 from "../../../assets/signup/dot3.png";
@@ -17,20 +18,12 @@ import { NavLink } from "react-router-dom";
 const Signup = () => {
   return (
     <Container fluid className={`${styles.mainBg}`}>
-      <Image
-        src={outerCircle1}
-        style={{
-          height: "90px",
-          position: "absolute",
-          top: "0",
-          right: "20%",
-        }}
-      />
+      <Image src={outerCircle1} className={`${styles.outerCircleOne}`} />
       <Row>
         <Col
-          lg={5}
-          md={5}
-          className={`${styles.leftPanel} d-flex align-items-center justify-content-center py-3`}
+          lg={6}
+          md={6}
+          className={`${styles.leftPanel} d-flex justify-content-center align-items-center`}
         >
           <Row className="w-100">
             <Col
@@ -39,93 +32,82 @@ const Signup = () => {
               md={{ span: 12, offset: 0 }}
               lg={{ span: 10, offset: 1 }}
               xl={{ span: 8, offset: 2 }}
+              s
               xxl={{ span: 8, offset: 2 }}
             >
-              <div>
-                {/* Heading Section */}
+              <div className={`${styles.contentContainer}`}>
                 <div className="w-100">
-                  <h2
+                  <Image src={LogoRes} className={`${styles.logoRes}`} />
+                  <p
                     className="mb-1 text-black"
-                    style={{ fontSize: "1.8rem" }}
+                    style={{ fontSize: "30px", fontWeight: "600" }}
                   >
                     Create an account
-                  </h2>
-                  <p className="mb-2 text-black" style={{ fontSize: "0.9rem" }}>
-                    Welcome back! Please enter your details
+                  </p>
+                  <p
+                    className="mb-2"
+                    style={{
+                      fontSize: "16px",
+                      fontWeight: "400",
+                      lineHeight: "24px",
+                      color: "#475467",
+                    }}
+                  >
+                    Welcome! Please enter your details.
                   </p>
                 </div>
 
                 {/* Form Section */}
-                <div className="w-100">
+                <div className="mt-4">
                   <Form>
-                    <Form.Group>
-                      <Form.Label className="small text-black">
-                        Full Name
-                      </Form.Label>
-                      <Form.Control
-                        type="text"
-                        placeholder="Enter your name"
-                        style={{ height: "32px" }}
-                      />
+                    <Form.Group className="mb-4">
+                      <Form.Label> Full Name</Form.Label>
+                      <Form.Control type="text" placeholder="Enter your name" />
                     </Form.Group>
 
-                    <Form.Group>
-                      <Form.Label className="small text-black">
-                        Contact Number
-                      </Form.Label>
+                    <Form.Group className="mb-3">
+                      <Form.Label> Contact Number</Form.Label>
                       <Form.Control
                         type="text"
                         placeholder="Enter your number"
-                        style={{ height: "32px" }}
                       />
                     </Form.Group>
 
-                    <Form.Group>
-                      <Form.Label className="small text-black">
-                        Email
-                      </Form.Label>
+                    <Form.Group className="mb-3">
+                      <Form.Label> Email</Form.Label>
                       <Form.Control
                         type="email"
                         placeholder="Enter your email"
-                        style={{ height: "32px" }}
                       />
                     </Form.Group>
 
-                    <Form.Group>
-                      <Form.Label className="small text-black">
-                        Password
-                      </Form.Label>
-                      <Form.Control
-                        type="password"
-                        placeholder="*******"
-                        style={{ height: "32px" }}
-                      />
+                    <Form.Group className="mb-3">
+                      <Form.Label> Password</Form.Label>
+                      <Form.Control type="password" placeholder="*******" />
                     </Form.Group>
 
-                    <Form.Group>
-                      <Form.Label className="small text-black">
-                        Confirm Password
-                      </Form.Label>
-                      <Form.Control
-                        type="password"
-                        placeholder="*******"
-                        style={{ height: "32px" }}
-                      />
+                    <Form.Group className="mb-3">
+                      <Form.Label> Confirm Password</Form.Label>
+                      <Form.Control type="password" placeholder="*******" />
                     </Form.Group>
 
-                    <Button className={` ${styles.customButton} w-100 mt-2`}>
+                    <Button className={`${styles.customButton} w-100 mt-2`}>
                       Sign up
                     </Button>
                   </Form>
                 </div>
 
                 {/* Bottom Text */}
-                <div className="px-3 pb-2">
+                <div className="text-center mt-4">
                   <p
-                    className="mt-2 mb-0 text-black"
-                    style={{ fontSize: "0.85rem" }}
+                    className="mt-2 mb-0"
+                    style={{
+                      fontSize: "14px",
+                      fontWeight: "400",
+                      color: "#475467",
+                    }}
                   >
-                    Already have an account?{" "}
+                    Already have an account?
                     <NavLink
                       to="/"
                       className={`${styles.customLink} text-decoration-none`}
@@ -140,18 +122,25 @@ const Signup = () => {
         </Col>
 
         <Col
-          lg={7}
-          md={7}
+          lg={6}
+          md={6}
           style={{
-            // border: "4px solid green",
             backgroundColor: "#220C36",
             display: "grid",
             placeItems: "center",
             position: "relative",
           }}
-          className={`  ${styles.rightImage}`}
+          className={`${styles.rightImage} d-none d-sm-block`}
         >
-          <Image style={{ color: "white" }} src={Logo} />
+          <Image
+            style={{
+              color: "white",
+              position: "absolute",
+              top: "50%",
+              left: "50%",
+            }}
+            src={Logo}
+          />
           <Image
             src={dot1}
             style={{

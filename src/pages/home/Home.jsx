@@ -70,7 +70,7 @@ const exploreDataTwo = [
 
 const resolveTimeData = {
   labels: [
-    "Monday ",
+    "Monday",
     "Tuesday",
     "Wednesday",
     "Thursday",
