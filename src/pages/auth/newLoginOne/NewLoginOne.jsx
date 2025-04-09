@@ -1,5 +1,5 @@
 import { Button, Col, Container, Form, Image, Row } from "react-bootstrap";
-import outerCircle1 from "../../../assets/signup/outerCircle1.png";
+// import outerCircle1 from "../../../assets/signup/outerCircle1.png";
 import groupImage from "../../../assets/images/heroimage/Group.png";
 import Logo from "../../../assets/images/logo/logo.jpg";
 
@@ -9,15 +9,11 @@ import { NavLink } from "react-router-dom";
 const NewLoginOne = () => {
   return (
     <Container fluid className={`${styles.mainBg}`}>
-      <Image src={outerCircle1} className={`${styles.outerCircleOne}`} />
+      {/* <Image src={outerCircle1} className={`${styles.outerCircleOne}`} /> */}
       <Row>
         <Col
           md={6}
-          className="p-0 d-none d-sm-block"
-          style={{
-            background: "#fff",
-            borderRadius: "10px",
-          }}
+          className={`${styles.customColumnLeft} p-0 d-none d-md-block`}
         >
           <Image src={Logo} className={`${styles.customLogo}`} />
           <div className="align-content-center d-flex justify-content-center">
@@ -25,9 +21,12 @@ const NewLoginOne = () => {
           </div>
         </Col>
 
-        <Col lg={6} md={6} className={`${styles.customColumn}`}>
+        <Col lg={6} md={6} className={`${styles.customColumnRight}`}>
           <div className={`${styles.loginForm}`}>
             <Form className={`${styles.customForm}`}>
+              <div className="d-block d-sm-none mb-4">
+                <Image src={Logo} />
+              </div>
               <h1 className={`${styles.heading}`}>Welcome back</h1>
               <p className={`${styles.paragraph}`}>
                 Welcome back! Please enter your details.

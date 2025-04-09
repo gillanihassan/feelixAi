@@ -13,12 +13,13 @@
 .leftPanel{
   min-height: calc(100vh - 8rem);
   background-color: white;
-  border-radius: 10px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
 }
-
-.rightImage{
+.rightPanel{
   min-height: calc(100vh - 8rem);
-  border-radius: 10px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
 }
 .customButton{
   background-color:#3BC1C5;
@@ -37,10 +38,11 @@
 .customLink{
   color:#3BC1C5;
   margin-left: 8px;
+  font-size: 14px;
+  font-weight: 600;
 }
 .contentContainer{
-  padding-left: 48px;
-  padding-right: 48px;
+  padding: 40px 48px;
 }
 .outerCircleOne{
   height: 90px;
@@ -53,12 +55,35 @@
 }
 
 
+@media (max-width: 1400px) {
+  .contentContainer{
+    padding: 40px 0px;
+  }
+}
+@media (max-width: 1200px) {
+  .contentContainer{
+    padding: 40px 0px;
+  }
+} 
+@media (max-width: 992px) {
+  .contentContainer{
+    padding: 40px 0px;
+  }
+} 
+@media (max-width: 768px) {
+  .contentContainer{
+    padding: 40px 0px;
+  }
+}
+
 @media (max-width: 576px) {
   .mainBg{
-    /* background-color: #3BC1C5; */
     min-height: 100vh;
-    padding: 1.5rem;
+    padding: 2rem;
     background-image: url('../../../assets/responsive/background.png'); 
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
   }
   .contentContainer{
     padding-left: 0px;
@@ -66,7 +91,7 @@
   }
   .leftPanel{
     min-height: calc(100vh - 3rem);
-    background-color: white;
+    background-color: #FFFFFF;
     border-radius: 20px;
   }
   .outerCircleOne {

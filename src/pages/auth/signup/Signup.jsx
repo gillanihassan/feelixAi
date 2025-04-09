@@ -10,7 +10,6 @@ import corner1 from "../../../assets/signup/corner1.png";
 import vector from "../../../assets/signup/vector.png";
 import background from "../../../assets/signup/background.png";
 import outerCircle1 from "../../../assets/signup/outerCircle1.png";
-// import outerCircle2 from "../../../assets/signup/outerCircle2.png";
 
 import styles from "./styles.module.css";
 import { NavLink } from "react-router-dom";
@@ -23,6 +22,8 @@ const Signup = () => {
         <Col
           lg={6}
           md={6}
+          sm={6}
+          xs={12}
           className={`${styles.leftPanel} d-flex justify-content-center align-items-center`}
         >
           <Row className="w-100">
@@ -32,7 +33,6 @@ const Signup = () => {
               md={{ span: 12, offset: 0 }}
               lg={{ span: 10, offset: 1 }}
               xl={{ span: 8, offset: 2 }}
-              s
               xxl={{ span: 8, offset: 2 }}
             >
               <div className={`${styles.contentContainer}`}>
@@ -124,13 +124,15 @@ const Signup = () => {
         <Col
           lg={6}
           md={6}
+          sm={6}
+          xs={12}
           style={{
             backgroundColor: "#220C36",
             display: "grid",
             placeItems: "center",
             position: "relative",
           }}
-          className={`${styles.rightImage} d-none d-sm-block`}
+          className={`${styles.rightPanel} d-none d-sm-block`}
         >
           <Image
             style={{
